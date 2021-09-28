@@ -31,7 +31,7 @@ jobs:
     - run: npm test
     
     - name: Deploy
-      run:
+      run: |
         git config --global user.name Lufeng
         git config --global user.email chenlf@udel.edu
         git remote set-url origin http://${github_token}@github.com/${repository}
