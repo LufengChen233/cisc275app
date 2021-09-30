@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/cisc275app/static/css/main.a617e044.chunk.css",
-    "main.js": "/cisc275app/static/js/main.6bc689e0.chunk.js",
-    "main.js.map": "/cisc275app/static/js/main.6bc689e0.chunk.js.map",
-    "runtime-main.js": "/cisc275app/static/js/runtime-main.283a6979.js",
-    "runtime-main.js.map": "/cisc275app/static/js/runtime-main.283a6979.js.map",
-    "static/js/2.8833cd6e.chunk.js": "/cisc275app/static/js/2.8833cd6e.chunk.js",
-    "static/js/2.8833cd6e.chunk.js.map": "/cisc275app/static/js/2.8833cd6e.chunk.js.map",
-    "static/js/3.ff0311e9.chunk.js": "/cisc275app/static/js/3.ff0311e9.chunk.js",
-    "static/js/3.ff0311e9.chunk.js.map": "/cisc275app/static/js/3.ff0311e9.chunk.js.map",
+    "main.css": "/cisc275app/static/css/main.ffb2ae4d.chunk.css",
+    "main.js": "/cisc275app/static/js/main.6032f8a4.chunk.js",
+    "main.js.map": "/cisc275app/static/js/main.6032f8a4.chunk.js.map",
+    "runtime-main.js": "/cisc275app/static/js/runtime-main.99f466ae.js",
+    "runtime-main.js.map": "/cisc275app/static/js/runtime-main.99f466ae.js.map",
+    "static/css/2.f2512455.chunk.css": "/cisc275app/static/css/2.f2512455.chunk.css",
+    "static/js/2.e0d97fae.chunk.js": "/cisc275app/static/js/2.e0d97fae.chunk.js",
+    "static/js/2.e0d97fae.chunk.js.map": "/cisc275app/static/js/2.e0d97fae.chunk.js.map",
     "index.html": "/cisc275app/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/cisc275app/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.8833cd6e.chunk.js.LICENSE.txt": "/cisc275app/static/js/2.8833cd6e.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/cisc275app/static/media/logo.6ce24c58.svg"
+    "static/css/2.f2512455.chunk.css.map": "/cisc275app/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.ffb2ae4d.chunk.css.map": "/cisc275app/static/css/main.ffb2ae4d.chunk.css.map",
+    "static/js/2.e0d97fae.chunk.js.LICENSE.txt": "/cisc275app/static/js/2.e0d97fae.chunk.js.LICENSE.txt",
+    "static/media/QingQing.a08e9088.png": "/cisc275app/static/media/QingQing.a08e9088.png",
+    "static/media/q1.e9f92299.jpg": "/cisc275app/static/media/q1.e9f92299.jpg",
+    "static/media/q2.0b7db107.jpg": "/cisc275app/static/media/q2.0b7db107.jpg",
+    "static/media/q3.ca26eb36.jpg": "/cisc275app/static/media/q3.ca26eb36.jpg",
+    "static/media/q4.cff00ad8.jpg": "/cisc275app/static/media/q4.cff00ad8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.283a6979.js",
-    "static/js/2.8833cd6e.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.6bc689e0.chunk.js"
+    "static/js/runtime-main.99f466ae.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.e0d97fae.chunk.js",
+    "static/css/main.ffb2ae4d.chunk.css",
+    "static/js/main.6032f8a4.chunk.js"
   ]
 }
