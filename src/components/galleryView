@@ -1,8 +1,3 @@
-import QingQing from '../My cat/QingQing.png';
-import q1 from '../My cat/q1.jpg';
-import q2 from '../My cat/q2.jpg';
-import q3 from '../My cat/q3.jpg';
-import q4 from '../My cat/q4.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -11,9 +6,5 @@ import './App.css';
 
 export function galleryview(index){
     
-  
-    const [pic] = ([q1, q2, q3, q4, QingQing]);
 
-   
-    return <div><img src={pic[index]} style={{"maxHeight":"40%","maxWidth":"40%"}} alt="My cat" /> <br/></div>
 }
