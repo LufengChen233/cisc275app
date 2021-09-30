@@ -43,7 +43,8 @@ function App() {
     }
       
       return (
-          <Container className="App">
+          <div className="bg">
+          <Container className="App" >
             <Row>
               <Col><Button style={{"fontSize":"18px"}} onClick={onClickPrevious}> Previous </Button></Col>
               <Col><Button style={{"margin-left":"5px", "fontSize":"18px"}} onClick={onClickNext}> Next </Button></Col>
@@ -51,13 +52,14 @@ function App() {
               <Card.Body>
                 <Card.Title>Gallery</Card.Title>
                 <Card.Text>
-                <div><img src={pic[index]} style={{"maxHeight":"70%","maxWidth":"70%"}} alt="My cat" /> <br/></div>
+                <div><img src={pic[index]} style={{"maxHeight":"70%","maxWidth":"70%"}} alt="Tankyou for watching " /> <br/></div>
                 </Card.Text>
               </Card.Body>
               </Card>
               <div><Like></Like></div>
             </Row>  
           </Container>
+          </div>
         );
 }
 
