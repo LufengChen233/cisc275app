@@ -4,26 +4,18 @@ import { useState } from 'react';
 
 export function Like (){
     
-    const [lcount,setLcount] = useState(0);
+    const [lcount,setLcount] = useState(Number(localStorage.getItem('likecount')));
 
-    const [ucount,setUcount] = useState(0);
+    const [ucount,setUcount] = useState(Number(localStorage.getItem('unlikecount')));
 
     const likecounter =()=>{
-        
-        localStorage.setItem("likecount", lcount)
-        localStorage.setItem("setLikecount", setLcount)
-        if(typeof(Storage) !== "undefined"){
-            if(localStorage.likecount){
-                setLcount (lcount+1);
-            } else{
-                lcount (localStorage.lcount);
-            }
-        }
+        setLcount(lcount+1);
+        localStorage.setItem('likecount',lcount);
     }
     
     const unlikecounter =()=>{
         setUcount(ucount+1);
-        localStorage.setItem("unlikecount", ucount)
+        localStorage.setItem('unlikecount',ucount);
     }
     
     let style={marginTop:"20px"}
@@ -32,6 +24,7 @@ export function Like (){
             <div className='card'>
                 <div className='card-header'></div>
                 <div className='card-title'>
+                    <h>Do you like her</h>
                 </div>
                 <div className='card-body'>
                     <div className='alert alert-success'>Like:{localStorage.getItem('likecount')}</div>
