@@ -1,54 +1,52 @@
-import React, {Component} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
 
 
-export class Like extends Component{
-    constructor(props,context){
-        super(props,context)
-        this.state = {
-            like:0,
-            unlike:0,
-            title:props.title
+export function Like (){
+    
+    const [lcount,setLcount] = useState(0);
+
+    const [ucount,setUcount] = useState(0);
+
+    const likecounter =()=>{
+        
+        localStorage.setItem("likecount", lcount)
+        localStorage.setItem("setLikecount", setLcount)
+        if(typeof(Storage) !== "undefined"){
+            if(localStorage.likecount){
+                setLcount (lcount+1);
+            } else{
+                lcount (localStorage.lcount);
+            }
         }
     }
-
-    static defaultProps={
-        title:"Do you like this pciture"
+    
+    const unlikecounter =()=>{
+        setUcount(ucount+1);
+        localStorage.setItem("unlikecount", ucount)
     }
-
-    render(){
-        let style={marginTop:"20px"}
-        let {like,unlike,title}= this.state
+    
+    let style={marginTop:"20px"}
+        
         return <div className='container' style={style}>
             <div className='card'>
                 <div className='card-header'></div>
                 <div className='card-title'>
-                    {title}
                 </div>
                 <div className='card-body'>
-                    <div className='alert alert-success'>Like:{like}</div>
-                    <div className='alert alert-danger'>Unlike:{unlike}</div>
+                    <div className='alert alert-success'>Like:{localStorage.getItem('likecount')}</div>
+                    <div className='alert alert-danger'>Unlike:{localStorage.getItem('unlikecount')}</div>
                 </div>
                 <div className='card-footer'>
-                    <button className='btn btn-primary' onClick={this.like}>Like</button>
+                    <button className='btn btn-primary' onClick={likecounter}>Like</button>
                     &nbsp;
                     &nbsp;
-                    <button className='btn btn-danger' onClick={this.unlike}>unlike</button>
+                    <button className='btn btn-danger' onClick={unlikecounter}>unlike</button>
                 </div>
             </div>
         </div>
         
-    }
-
-    like = () => {
-        this.setState({like:this.state.like + 1})
-    }
-
-    unlike = () => {
-        this.setState({unlike:this.state.unlike + 1})
-    }
 }
-
 
 
 
