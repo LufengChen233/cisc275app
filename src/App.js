@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Container,Row,Button,Col,Card} from 'react-bootstrap';
+import { Like } from './Likeornor/like';
 
 
 
@@ -54,6 +55,7 @@ function App() {
                 </Card.Text>
               </Card.Body>
               </Card>
+              <div><Like></Like></div>
             </Row>  
           </Container>
         );
